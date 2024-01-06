@@ -1,6 +1,9 @@
 const inquirer = require('inquirer');
 const jest =  require('jest');
+const renderShape = require('./assets/renderShape');
 
+
+function generateLogo(data) {
 inquirer
     .prompt([
       {
@@ -27,3 +30,8 @@ inquirer
         name: 'logoColor',
       },
     ])
+
+    .then((data) => {
+        console.log(data);
+        const svg = renderShape(data)
+}
