@@ -34,7 +34,6 @@ function generateLogo(data) {
         .then((data) => {
             console.log(data);
             const svg = renderShape(data);
-            fs.writeFile('./assets/output/exampleLogo.svg', svg, () => console.log('Generated exampleLogo.svg'));
 
             if (!fs.existsSync('./assets/output')) {
                 fs.mkdirSync('./assets/output');
