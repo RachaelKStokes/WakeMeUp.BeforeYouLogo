@@ -1,3 +1,5 @@
+//parent class of circle, square, and triangle
+
 class Shape {
     constructor(logoColor, logoText, textColor) {
         this.logoColor = logoColor;

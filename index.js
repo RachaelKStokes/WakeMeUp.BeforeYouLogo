@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const jest = require('jest');
 const renderShape = require('./assets/renderShape');
+const fs = require('fs');
 
 
 function generateLogo(data) {
